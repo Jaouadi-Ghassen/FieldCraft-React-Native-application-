@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "371389870301",
+    "project_id": "fieldcraft-2889e",
+    "storage_bucket": "fieldcraft-2889e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371389870301:android:a5511a5a34992665172b34",
+        "android_client_info": {
+          "package_name": "com.fieldcraft"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIHiOfTJse_NgG5ZBoo4_5c4tcmWa-sXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

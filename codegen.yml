@@ -1,0 +1,28 @@
+overwrite: true
+schema: 'http://localhost:3000/graphql'
+documents: 'src/data/dataSource/graphql/entities/**/*.gql.ts'
+config:
+  sort: false
+generates:
+  ./src/data/dataSource/graphql/graphql-schema-types.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+    config:
+      namingConvention:
+        enumValues: keep
+  ./src/data/dataSource/graphql/graphql-introspection.json:
+    plugins:
+      - 'urql-introspection'
+  src/dataSource/graphql:
+    preset: near-operation-file
+    presetConfig:
+      baseTypesPath: graphql-schema-types
+      extension: .hooks.tsx
+    plugins:
+      - typescript-urql
+    config:
+      useTypeImports: true
+      typesPrefix: 'Types.'
+      fragmentVariablePrefix: 'use'
+      # pureMagicComment: true
